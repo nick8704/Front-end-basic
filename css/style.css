@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff') format('woff'), url('../fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff') format('woff'), url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    color: #333;
+}
+
+.title-block, .form-title {
+    font-family: "Oswald", Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.photo {
+    min-width: 320px;
+}
+
+.content {
+    font-family: "Raleway", Arial, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(223, 213, 213);
+    padding: 10px 10px;
+    text-align: justify;
+    margin: 0 10px;
+    min-height: 480px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    font-family: "Oswald", Arial, sans-serif;
+    background-image: url("../img/background-earth.jpg");
+    background-size: 100%;
+    width: 800px;
+    padding: 30px 50px 60px 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-title {
+    font-size: 24px;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-text-input {
+    padding: 6px;
+    border-radius: 9px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 290px;
+    margin-top: 18px;
+}
+
+.message-input {
+    width: 320px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin: 5px 18px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.btn {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+    width: 140px;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: #b5b5b5;
+}
+
+@media(max-width: 800px) {
+    .main-content, .form-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        background-image: none;
+        background-color: #404040;
+    }
+
+    .content {
+        min-width: 320px;
+        margin: 0;
+        min-height: 100%;
+    }
+
+    .message-input {
+        width: 290px;
+    }
+
+    .form-button {
+        padding-top: 30px;
+    }
+
+}
