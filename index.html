@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя работа к уроку 1</title>
+    <meta name="description"
+          content="Это домашняя работа к уроку 1 студента группы Front End Basic Никонец Александра.">
+</head>
+<body>
+<h1 style="color: #c93d25; text-align: center;">Это самый главный заголовок, поэтому выровняем его по центру</h1>
+<h2 style="text-align: right;"><a name="internal link"></a>Это менее важный заголовок, но выровняем его по правому краю
+</h2>
+<h3 style="text-align: justify;">Этот заголовок выровнен по ширине. Но этого не видно, т.к. длинна заголовка должна быть
+    более одной строки</h3>
+<h4 style="text-align: left;">Этот заголовок выровнен по левому краю. Но этого можно было и не делать</h4>
+<h5>А этот заголовок не выравнивался. Он просто есть</h5>
+<h6>И этот тоже</h6>
+<p>Перейдем к созданию <em>списка</em>.<br>Например создадим <strong>список студентов нашей группы</strong>.</p>
+<ul>
+    <li>Александр Никонец</li>
+    <li>Алина Золотарева</li>
+    <li>Валерия Павленко</li>
+    <li>Виктория Бугрова</li>
+    <li>Георигй Бошков</li>
+    <li>Дмитрий Сливко</li>
+    <li>Дмитрий Чебан</li>
+    <li>Евгений Выродов</li>
+    <li>Игорь Борзенков</li>
+    <li>Кирилл Шелепун</li>
+    <li>Максим Бигун</li>
+    <li>Алексей Калугин</li>
+    <li>Павел Колмаков</li>
+    <li>Юлия Сигетий</li>
+</ul>
+<!-- Кстати это пример комментария в коде, который не будет отображаться пользователю -->
+<div style="text-align: justify;" title="Это супер информативная всплывающая подсказка к блоку div">Lorem, ipsum dolor
+    sit amet consectetur adipisicing elit. <span style="color: rgb(221, 58, 199)">A natus incidunt fugit unde ad alias voluptas vel quis ea labore esse eligendi eum ratione molestias tempore illum error, praesentium magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit</span>.
+    Eligendi perferendis totam magnam laborum excepturi nulla veritatis quod ipsa ipsum officia? Tempora culpa
+    temporibus, laborum expedita sed quos error recusandae blanditiis? Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Rerum fugiat aliquam ullam placeat, ex vel. Quos voluptas neque, enim nesciunt repellat veniam,
+    architecto eos perferendis optio expedita cum ad impedit?
+</div>
+<br>
+<div style="text-align: center;">Теперь добавим фото счастливой собаки <br><img
+        src="https://images.pexels.com/photos/3487734/pexels-photo-3487734.jpeg" alt="Самая счастливая собака в мире"
+        width="650"></div>
+<p>Пришло время добавить внешнюю ссылку на самый информативный <a href="https://www.ukr.net" target="_blank"
+                                                                  title="Еще одна супер полезная подсказка">новостной
+    сайт</a> Украины. Ссылка откроется в новом окне.</p>
+<p>А здесь будет <a href="#internal link">внутренняя ссылка</a>, которая ведет на 2-й заголовок h2. Ну тот, который
+    выровнен по правому краю.</p>
+<form action="">
+    <p style="font-size: 25px;">Пример формы</p>
+    <p>Введите логин: <input type="text" id="login" name="login" size="30" placeholder="Логин" required></p>
+    <p>Введите пароль: <input type="password" id="password" name="password" size="30" placeholder="Пароль" required></p>
+    <p>Выберите Ваш возраст:</p>
+    <input type="radio" name="age" value="18-30">18-30<br>
+    <input type="radio" name="age" value="30-40">30-40<br>
+    <input type="radio" name="age" value="40-55">40-55<br>
+    <input type="radio" name="age" value="55+">55+<br>
+    <p>Выберите Ваше хобби:<br>
+        <input type="checkbox" id="fishing" name="hobby" value="fishing">
+        <label for="fishing">Рыбалка</label><br>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Чтение</label><br>
+        <input type="checkbox" id="sport" name="hobby" value="sport">
+        <label for="sport">Спорт</label><br>
+        <input type="checkbox" id="drawing" name="hobby" value="drawing">
+        <label for="drawing">Рисование</label><br>
+    </p>
+    <p>Введите номер телефона: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                      placeholder="XXX-XXX-XXXX"></p>
+    <p>Выберите регион проживания:</p>
+    <select name="region" id="region">
+        <option value="north">Северная Украина</option>
+        <option value="south">Южная Украина</option>
+        <option value="west">Западная Украина</option>
+        <option value="east">Восточная Украина</option>
+        <option value="center">Центральная Украина</option>
+    </select><br>
+    <p>Выберите категории водительских прав(можно выбрать несколько):</p>
+    <select name="drive licence" id="drive licence" size="4" multiple>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="ce">CE</option>
+        <option value="be">BE</option>
+        <option value="c1d">C1D</option>
+    </select>
+    <p>Выберите файл в Вашим резюме: <input type="file" id="cv" name="cv"></p>
+    <p><strong>Расскажите о себе:</strong></p>
+    <textarea id="biography" rows="10" cols="40">Я родился в     году...</textarea>
+    <p><strong>Заполните информацию об образовании:</strong></p>
+    <textarea id="study" rows="5" cols="40" placeholder="ВУЗ, специальность, год окончания"></textarea>
+    <p><strong>Пользовательское соглашение:</strong></p>
+    <textarea id="terms of use" rows="5" cols="40" readonly>Здесь находится пользовательское соглашение. Пользовательское соглашение - это договор между пользователем и владельцем сайта об условиях его использования. Пользовательсткое соглашение может включать условия оферты на коммерческое использование, но иногда лучше их разделять.Не всякий пользователь готов разместить заказ на стадии ознакомления с сайтом, но вы уже начали собирать о нем данные. Если на сайте разрешена регистрация или есть форма обратной связи либо кнопка подписки на новости, необходимо обеспечить полчение согласия на обработку персональных данных пользователя в связи с заключением договора.</textarea><br>
+    <button type="submit">Сохранить</button>
+</form>
+</body>
+</html>
