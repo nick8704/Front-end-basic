@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-title {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    margin-bottom: 5px;
+}
+
+.form-container > div {
+    float: left;
+    width: 550px;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.feedback-form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: small;
+    background-color: rgb(241, 237, 237);
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.registration-form {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+.form-item {
+    padding: 5px;
+}
+
+.form-label, .form-text-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-label {
+    width: 290px;
+    margin-top: 6px;
+}
+
+.message-label {
+    margin-bottom: 110px;
+}
+
+.form-text-input {
+    width: 220px;
+    padding: 7px;
+    border: 1px solid grey;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: -10px -10px 40px 0px rgba(199, 199, 199, 0.2);;
+}
+
+.message-input {
+    border-bottom: 0px;
+}
+
+.select-input, .form-button {
+    border: 1px solid grey;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: 10px 10px 40px 0px rgba(68, 68, 68, 0.2);
+}
+
+.info {
+   color: rgb(112, 110, 110); 
+   border-bottom: 1px solid rgb(230, 227, 227);
+   margin-bottom: 15px;
+   margin-left: 5px;
+}
+
+.form-button {
+    width: 95px;
+    height: 25px;
+    margin-inline-end: 10px;
+}
+
+.registration-form {
+    background:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.5)), url(../img/background.jpg);
+    width: 590px;
+    height: 600px;
+}
+
+.reg-form-header {
+    text-align: end;
+    margin-right: 20px;
+}
+
+.reg-form-title {
+    font-family: "Lato", sans-serif;
+    color: rgb(112, 110, 110); 
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+
+.reg-form-container {
+    background-color: rgb(241, 237, 237);
+    border: 1px solid rgb(146, 143, 143);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.error-item {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reg-form-item, .last-item {
+    border-top: 1px solid grey;
+}
+
+.reg-form-item {
+    height: 70px;
+}
+
+.first-item, .last-item {
+    height: 80px;
+}
+
+.captcha-img {
+    width: 50px;
+}
+
+.reg-form-label, .reg-form-text-input, .captcha-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+ }
+
+.reg-form-label {
+    width: 100px;
+    text-align: right;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+.reg-form-text-input {
+    width: 270px;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.code-input{
+    width: 105px;
+} 
+
+.captcha-img {
+    margin-left: 5px;
+    width: 130px;
+    height: 33px;
+    border: 2px solid black;
+}
+
+.reg-button {
+    width: 290px;
+    font-weight: 600;
+    font-size: 1.1em;
+}

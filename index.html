@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Это домашняя работа к уроку 3 студента группы Front End Basic Никонец Александра."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Домашняя работа к уроку 3</title>
+    <script>
+        function getRandom() {
+            document.getElementById("equation").innerHTML = (1 + Math.floor(Math.random() * 10)) + " + " + (1 + Math.floor(Math.random() * 10)) + " = ";
+        }
+    </script>
+    <script>
+        function checkForm() {
+            var valid = true;
+            var error = document.getElementById("error-message");
+            var field = "";
+
+            field = document.getElementById("captcha");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите CAPTCHA";
+            }
+
+            field = document.getElementById("full-name");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите полное имя";
+            }
+
+            field = document.getElementById("email-address");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите корректный e-mail";
+            }
+
+            field = document.getElementById("repeat-password");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Повторите пароль";
+            }
+
+            field = document.getElementById("password");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите пароль";
+            }
+
+            field = document.getElementById("login");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Логин должен быть от 4 до 12 символов";
+            }
+
+            return valid;
+        }
+    </script>
+</head>
+<body onload="getRandom();">
+<div class="form-container">
+    <div class="feedback-form">
+        <form>
+            <h2 class="form-title">ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
+            <div class="form-item">
+                <label class="form-label">НАЗВАНИЕ ОРГАНИЗАЦИИ / ВАШЕ ИМЯ: </label>
+                <input class="form-text-input" type="text" name="name" id="name" required/>
+            </div>
+            <div class="form-item">
+                <label class="form-label">ВАШ ТЕЛЕФОН: </label>
+                <input class="form-text-input" type="tel" name="phone" id="phone" pattern="[0-9]{10}" required/>
+            </div>
+            <div class="form-item">
+                <label class="form-label">ВАШ E-MAIL: </label>
+                <input class="form-text-input" type="email" name="email" id="email" required/>
+            </div>
+            <div class="info">
+                <p>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</p>
+            </div>
+            <div class="form-item">
+                <label class="form-label">ТЕМА ПИСЬМА: </label>
+                <select class="form-text-input select-input" name="topic" id="topic" required>
+                    <option disabled selected value="">- выбрать тему -</option>
+                    <option value="return">Возврат товара</option>
+                    <option value="breaking">Поломка товара</option>
+                    <option value="guarantee">Гарантийный случай</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label class="form-label message-label">СООБЩЕНИЕ: </label>
+                <textarea class="form-text-input message-input" maxlength="300" name="message" id="message" cols="21"
+                          rows="7" required></textarea>
+            </div>
+            <div class="info">
+                <p>РЕШИТЕ ПРИМЕР И НАЖМИТЕ "ОТПРАВИТЬ"</p>
+            </div>
+            <div class="form-item">
+                <label class="form-label" id="equation"></label>
+                <input class="form-text-input" type="text" name="verification" id="verification" required/>
+            </div>
+            <div class="form-item">
+                <label class="form-label"></label>
+                <input class="form-button" type="submit" value="Отправить"/>
+                <input class="form-button" type="reset" value="Очистить"/>
+            </div>
+        </form>
+    </div>
+    <div class="registration-form">
+        <form onsubmit="return checkForm();" novalidate>
+            <div class="reg-form-header">
+                <h3 class="reg-form-title">Регистрация</h3>
+            </div>
+            <div class="reg-form-container">
+                <div class="error-item">
+                    <label id="error-message" style="color: red;"></label>
+                </div>
+                <div class="first-item">
+                    <div>
+                        <label class="reg-form-label">Логин: </label>
+                        <input class="reg-form-text-input" type="text" name="name" id="login" required minlength="4"
+                               maxlength="12"/>
+                    </div>
+                </div>
+                <div class="reg-form-item">
+                    <label class="reg-form-label">Пароль: </label>
+                    <input class="reg-form-text-input" type="password" name="password" id="password" required/>
+                </div>
+                <div class="reg-form-item">
+                    <label class="reg-form-label">Подтверждение пароля: </label>
+                    <input class="reg-form-text-input" type="password" name="repeat-password" id="repeat-password"
+                           required/>
+                </div>
+                <div class="reg-form-item">
+                    <label class="reg-form-label">E-mail адрес: </label>
+                    <input class="reg-form-text-input" type="email" name="email" id="email-address" required/>
+                </div>
+                <div class="reg-form-item">
+                    <label class="reg-form-label">Полное имя: </label>
+                    <input class="reg-form-text-input" type="text" name="full-name" id="full-name" required/>
+                </div>
+                <div class="reg-form-item">
+                    <label class="reg-form-label">Код: </label>
+                    <input class="reg-form-text-input code-input" type="text" name="captcha" id="captcha" required/>
+                    <img class="captcha-img" src="img/captcha.jpg" alt="CAPTCHA"/>
+                </div>
+                <div class="last-item">
+                    <label class="reg-form-label"></label>
+                    <input class="reg-form-text-input reg-button" type="submit" value="Регистрация"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
