@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Это домашняя работа к уроку 2 студента группы Front End Basic Никонец Александра."/>
+    <title>Домашняя работа к уроку 2</title>
+    <script>
+        function getRandom() {
+            document.getElementById("equation").innerHTML = (1 + Math.floor(Math.random() * 10)) + " + " + (1 + Math.floor(Math.random() * 10)) + " = ";
+        }
+    </script>
+    <script>
+        function checkForm() {
+            var valid = true;
+            var error = document.getElementById("error-message");
+            var field = "";
+
+            field = document.getElementById("captcha");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите CAPTCHA";
+            }
+
+            field = document.getElementById("full-name");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите полное имя";
+            }
+
+            field = document.getElementById("email-address");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите корректный e-mail";
+            }
+
+            field = document.getElementById("repeat-password");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Повторите пароль";
+            }
+
+            field = document.getElementById("password");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Введите пароль";
+            }
+
+            field = document.getElementById("login");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Логин должен быть от 4 до 12 символов";
+            }
+
+            return valid;
+        }
+    </script>
+</head>
+<body onload="getRandom();">
+<div>
+    <form>
+        <h3>ФОРМА ОБРАТНОЙ СВЯЗИ</h3>
+        <div>
+            <label>НАЗВАНИЕ ОРГАНИЗАЦИИ / ВАШЕ ИМЯ: </label>
+            <input type="text" name="name" id="name" required/>
+        </div>
+        <div>
+            <label>ВАШ ТЕЛЕФОН: </label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required/>
+        </div>
+        <div>
+            <label>ВАШ E-MAIL: </label>
+            <input type="email" name="email" id="email" required/>
+        </div>
+        <div>
+            <p>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</p>
+        </div>
+        <div>
+            <label>ТЕМА ПИСЬМА: </label>
+            <select name="topic" id="topic" required>
+                <option disabled selected value="">- выбрать тему -</option>
+                <option value="return">Возврат товара</option>
+                <option value="breaking">Поломка товара</option>
+                <option value="guarantee">Гарантийный случай</option>
+            </select>
+        </div>
+        <div>
+            <label>СООБЩЕНИЕ: </label>
+            <textarea maxlength="300" name="message" id="message" cols="40" rows="10" required></textarea>
+        </div>
+        <div>
+            <p>РЕШИТЕ ПРИМЕР И НАЖМИТЕ "ОТПРАВИТЬ"</p>
+        </div>
+        <div>
+            <label id="equation"></label>
+            <input type="text" name="verification" id="verification" required/>
+        </div>
+        <div>
+            <input type="submit" value="Отправить"/>
+            <input type="reset" value="Очистить"/>
+        </div>
+    </form>
+</div>
+<br/>
+<div>
+    <form onsubmit="return checkForm();" novalidate>
+        <h3>Регистрация</h3>
+        <label id="error-message" style="color: red;"></label>
+        <div>
+            <label>Логин: </label>
+            <input type="text" name="name" id="login" required minlength="4" maxlength="12"/>
+        </div>
+        <div>
+            <label>Пароль: </label>
+            <input type="password" name="password" id="password" required/>
+        </div>
+        <div>
+            <label>Подтверждение пароля: </label>
+            <input type="password" name="repeat-password" id="repeat-password" required/>
+        </div>
+        <div>
+            <label>E-mail адрес: </label>
+            <input type="email" name="email" id="email-address" required/>
+        </div>
+        <div>
+            <label>Полное имя: </label>
+            <input type="text" name="full-name" id="full-name" required/>
+        </div>
+        <div>
+            <label>Код: </label>
+            <input type="text" name="captcha" id="captcha" required/>
+            <img src="https://i.blogs.es/cccb21/650_1000_captcha/450_1000.jpg" alt="CAPTCHA" width="120"/>
+        </div>
+        <div>
+            <input type="submit" value="Регистрация"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
