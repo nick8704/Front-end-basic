@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff') format('woff'), url('../fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff') format('woff'), url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'), url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    color: #333;
+}
+
+.title-block, .form-title {
+    font-family: "Oswald", Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.photo {
+    width: 400px;
+}
+
+.content {
+    font-family: "Raleway", Arial, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(223, 213, 213);
+    padding: 10px 10px;
+    text-align: justify;
+    margin: 0 10px;
+}
+
+.contact-form {
+    font-family: "Oswald", Arial, sans-serif;
+    background-image: url("../img/background-earth.jpg");
+    background-size: 100%;
+    width: 800px;
+    padding: 30px 50px 60px 50px;
+    margin: 10px;
+}
+
+.form-title {
+    font-size: 24px;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-text-input {
+    padding: 8px;
+    border-radius: 9px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 290px;
+    margin-top: 18px;
+}
+
+.message-input {
+    width: 330px;
+    margin-right: 0px;
+}
+
+.form-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 18px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.btn {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+    width: 140px;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: #b5b5b5;
+}
