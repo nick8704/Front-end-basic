@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.sect-1-small-block-1 {
+    width: 400px;
+    height: 400px;
+}
+
+.sect-1-small-block-2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sect-1-big-block {
+    width: 100vw;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.sect-2-block-1, .sect-2-block-2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.sect-2-block-1 {
+    top: 0;
+    left: 0;
+}
+
+.sect-2-block-2 {
+    left: 50%;
+    top: 50%;
+}
+
+.sect-3-block-1, .sect-3-block-downwards, .sect-3-block-upwards {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.sect-3-block-1 {
+    top: 0;
+    left: 0;
+}
+
+.sect-3-block-downwards {
+    left: 50%;
+    top: 50%;
+}
+
+.sect-3-block-upwards {
+    left: 50%;
+    bottom: 50%;
+}
+
+.section-1 {
+    position: relative;
+    width: 100%;
+    height: 880px;
+    margin-bottom: 100px;
+}
+
+.section-2 {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 100px;
+}
+
+.section-3 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.aquamarine {
+    background-color:#badfe5;
+}
+
+.blue {
+    background-color: #6f9c9f;
+}
+
+.purple {
+    background-color: #5f3895;
+}
+
+.green {
+   background-color: #a5cc4f;
+}
