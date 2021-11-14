@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Это домашняя работа к уроку 7 студента группы Front End Basic Никонец Александра." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Домашняя работа к уроку 7</title>
+</head>
+
+<body>
+<form action="">
+    <div class="form-block">
+        <div class="form-item">
+            <label class="form-label required">Type</label>
+            <br />
+            <div class="select">
+                <select class="form-text-input select" name="type" id="type" required>
+                    <option value="tractor">Tractor</option>
+                    <option value="crane">Mobile crane</option>
+                    <option value="platform">Platform truck</option>
+                    <option value="multivan">Multivan</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">SubType</label>
+            <br />
+            <input class="form-text-input" type="text" name="sub-type" id="sub-type" required>
+        </div>
+        <div class="form-item">
+            <label class="form-label">Specs</label>
+            <br />
+            <input class="form-text-input" type="text" name="specs" id="specs">
+        </div>
+        <div class="form-item">
+            <label class="form-label">Driver</label>
+            <br />
+            <div class="select">
+                <select class="form-text-input select input-grey" name="driver" id="driver">
+                    <option selected value="">Select</option>
+                    <option value="tom">Tom</option>
+                    <option value="jack">Jack</option>
+                    <option value="steph">Steph</option>
+                    <option value="john">John</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-block">
+        <div class="form-item">
+            <label class="form-label required">Vehicle ID Number (VIN)</label>
+            <br />
+            <input class="form-text-input" type="text" name="vin" id="vin" required>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">Make</label>
+            <br />
+            <input class="form-text-input" type="text" name="make" id="make" required>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">Model</label>
+            <br />
+            <input class="form-text-input" type="text" name="model" id="model" required>
+        </div>
+        <div class="form-item small-inputs">
+            <div class="made-info-main">
+                <label class="form-label required">Year</label>
+                <br />
+                <input class="form-text-input made-info" type="text" name="year" id="year" required>
+            </div>
+            <div class="made-info-main made-gvw">
+                <label class="form-label required">GVW</label>
+                <br />
+                <input class="form-text-input made-info" type="text" name="made-gvw" id="made-gvw" required>
+            </div>
+            <div class="made-info-main">
+                <label class="form-label required">Unit</label>
+                <br />
+                <div class="select">
+                    <select class="form-text-input made-info select" name="made-unit" id="made-unit" required>
+                        <option value="lbs">LBS</option>
+                        <option value="kgs">KGS</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-block">
+        <div class="form-item">
+            <label class="form-label required">License Plate</label>
+            <br />
+            <input class="form-text-input" type="text" name="license" id="license" required>
+        </div>
+        <div class="form-item">
+            <label class="form-label">Port Pass RFID</label>
+            <br />
+            <label class="label-checkbox input-grey">
+                <input class="checkbox" type="checkbox" id="rfid">
+                <span class="checkbox-wrap"></span>
+                Type here
+            </label>
+        </div>
+        <div class="form-item">
+            <label class="form-label required">Ownership</label>
+            <br />
+            <div class="select">
+                <select class="form-text-input select" name="ownership" id="ownership" required>
+                    <option value="owned">Owned</option>
+                    <option value="rented">Rented</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="form-label">Truck Type</label>
+            <br />
+            <div class="select">
+                <select class="form-text-input select" name="truck-type" id="truck-type">
+                    <option value="sleeper">Sleeper</option>
+                    <option value="box">Box</option>
+                    <option value="dump">Dump</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-block">
+        <div class="reg-block-main">
+            <div class="reg-block">
+                <h5 class="title-reg">Registration</h5>
+                <div class="form-item">
+                    <label class="form-label required">State</label>
+                    <br />
+                    <div class="select">
+                        <select class="form-text-input select" name="state" id="state" required>
+                            <option value="al">AL - Alabama</option>
+                            <option value="fl">FL - Florida</option>
+                            <option value="in">IN - Indiana</option>
+                            <option value="nd">ND - North Dakota</option>
+                            <option value="tx">TX - Texas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="form-label required">Date</label>
+                    <br />
+                    <input class="form-text-input" type="text" name="date" id="date" required>
+                </div>
+                <div class="form-item small-inputs">
+                    <div class="reg-info-main">
+                        <label class="form-label required">GVW</label>
+                        <br />
+                        <input class="form-text-input reg-info" type="text" name="reg-gvw" id="reg-gvw" required>
+                    </div>
+                    <div class="reg-info-main reg-gvw">
+                        <label class="form-label required">Unit</label>
+                        <br />
+                        <div class="select">
+                            <select class="form-text-input reg-info select" name="reg-unit" id="reg-unit" required>
+                                <option value="kgs">KGS</option>
+                                <option value="lbs">LBS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reg-block">
+                <div class="form-item">
+                    <label class="form-label required">Restrictions</label>
+                    <br />
+                    <div class="select restrictions">
+                        <select class="form-text-input select" name="restrictions" id="restrictions" required>
+                            <option value="highway">Highway</option>
+                            <option value="bridge">Bridge</option>
+                            <option value="road">Regular road</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item exp-date">
+                    <label class="form-label required">Exp. Date</label>
+                    <br />
+                    <input class="form-text-input" type="text" name="exp-date" id="exp-date" required>
+                </div>
+                <div>
+                    <label class="form-label">Doc. Image</label>
+                    <br />
+                    <input class="upload" type="file" name="doc-image" id="doc-image" accept="image/*">
+                    <label for="doc-image" class="label-upload">
+                            <span>
+                                <img src="img/cloud_upload_white_24dp.svg" class="material-icons" alt="">
+                            </span>
+                        Upload
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
