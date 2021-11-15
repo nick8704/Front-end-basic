@@ -47,6 +47,7 @@ body {
 
 .text {
     line-height: 1.5;
+    letter-spacing: .05em;
 }
 
 .intro-img {
@@ -56,6 +57,10 @@ body {
 .intro-form {
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 42px;
 }
 
 .btn {
@@ -68,16 +73,42 @@ body {
     border-radius: 50px;
     cursor: pointer;
     border: 0;
+    position: absolute;
+    right: 0;
 }
 
-.intro-form .btn{
+.intro-form .btn {
     position: absolute;
 }
 
 .intro-form-text {
     border: 0;
-    padding: 16px;
+    padding: 16px 72px;
     font-size: 16px;
     box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 50px;
+    outline: none;
+    width: 100%;
+}
+
+.email-img {
+    display: block;
+    position: absolute;
+    margin-left: 28px;
+}
+
+.company-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 42px;
+    margin-top: 100px;
+}
+
+.logo-second {
+    max-height: 34px;
+}
+
+.logo-fourth {
+    max-height: 38px;
 }
