@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -50,16 +51,12 @@ body {
     letter-spacing: .05em;
 }
 
-.intro-img {
-    margin-left: 15px;
-}
-
 .intro-form {
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    width: 85%;
+    max-width: 459px;
     margin-top: 42px;
 }
 
@@ -111,4 +108,98 @@ body {
 
 .logo-fourth {
     max-height: 38px;
+}
+
+@media(max-width: 1110px) {
+    .navbar-list {
+        margin-right: 10px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 34px;
+        line-height: 1.5;
+        margin: 0 20px;
+        width: 90%;
+        text-align: left;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+
+    .intro-img {
+        max-width: 100%;
+    }
+
+    .intro-form {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 950px) {
+    .company-logo {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin: 10px;
+    }
+}
+
+@media(max-width: 650px) {
+    .navbar-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 500px) {
+    .intro-form {
+        overflow: inherit;
+    }
+
+    .intro-form-text {
+        box-shadow: none;
+    }
+
+    .btn {
+        position: absolute;
+        left: 0;
+        top: 70px;
+    }
+
+    .company-logo {
+        margin-top: 150px;
+    }
+}
+
+@media(max-width: 340px) {
+    .email-img {
+        display: none;
+    }
+
+    .intro-form-text {
+        padding-left: 0;
+    }
 }
