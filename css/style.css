@@ -114,6 +114,99 @@ body {
     max-height: 38px;
 }
 
+.best-space-sect {
+    margin-top: 100px;
+}
+
+.best-space-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.best-space-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-space-media {
+    display: flex;
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.best-space-img {
+    height: 550px;
+    border-radius: 20px;
+}
+
+.space-img-second {
+    margin: 0 32px 0 -90px;
+}
+
+.space-img-first {
+    border-bottom-right-radius: 0;
+}
+
+.best-space-card {
+    width: 300px;
+    height: 140px;
+    position: absolute;
+    top: 322px;
+    right: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    padding: 32px 29px 32px 94px;
+}
+
+.best-space-card:before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/best-space-icon.svg);
+    top: 48px;
+    left: 29px;
+}
+
+.best-space-card-title {
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.best-space-card-content {
+    line-height: 27px;
+    letter-spacing: 1.15px;
+}
+
+.best-space-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 375px;
+    width: 100%;
+    margin-right: 164px;
+}
+
+.best-space-heading {
+    margin-bottom: 20px;
+}
+
+.best-space-btn {
+    max-width: 172px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.product-sect {
+    margin: 145px auto;
+}
+
 .product-block {
     background-image: url(../img/product-bg.jpg);
     background-size: cover;
@@ -137,6 +230,41 @@ body {
 .heading {
     font-size: 42px;
     margin-top: 0;
+    font-weight: 700;
+    line-height: 62px;
+}
+
+.product-heading {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.product-text {
+    line-height: 27px;
+    color: #fff;
+    max-width: 340px;
+}
+
+.contact-us-btn {
+    margin-right: 20px;
+}
+
+.watch-now-btn {
+    color: #323232;
+    padding: 19px 29px 19px 49px;
+    background-color: #fff;
+    position: relative;
+}
+
+.watch-now-btn:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/watch-now-icon.svg);
+    background-repeat: no-repeat;
+    top: 21px;
+    left: 30px;
 }
 
 .experience-sect {
@@ -159,7 +287,8 @@ body {
     max-width: 360px;
 }
 
-@media(max-width: 1110px) {
+
+@media (max-width: 1110px) {
     .navbar-list {
         margin-right: 10px;
     }
@@ -195,7 +324,7 @@ body {
     }
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     .product-block-img {
         position: static;
     }
@@ -214,7 +343,7 @@ body {
     }
 }
 
-@media(max-width: 950px) {
+@media (max-width: 950px) {
     .company-logo {
         flex-direction: column;
         justify-content: flex-start;
@@ -238,14 +367,14 @@ body {
     }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
     .navbar-list {
         flex-direction: column;
         gap: 15px;
     }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .intro-form {
         overflow: inherit;
     }
@@ -261,7 +390,7 @@ body {
     }
 }
 
-@media(max-width: 340px) {
+@media (max-width: 340px) {
     .email-img {
         display: none;
     }
