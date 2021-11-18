@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -56,7 +60,7 @@ body {
     overflow: hidden;
     display: flex;
     align-items: center;
-    max-width: 459px;
+    max-width: 460px;
     margin-top: 42px;
 }
 
@@ -66,21 +70,21 @@ body {
     color: white;
     font-size: 16px;
     display: inline-block;
-    padding: 16px 37px;
+    padding: 20px 37px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
-    position: absolute;
-    right: 0;
+    text-decoration: none;
 }
 
 .intro-form .btn {
     position: absolute;
+    right: 0;
 }
 
 .intro-form-text {
     border: 0;
-    padding: 16px 72px;
+    padding: 20px 72px;
     font-size: 16px;
     box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 50px;
@@ -108,6 +112,51 @@ body {
 
 .logo-fourth {
     max-height: 38px;
+}
+
+.product-block {
+    background-image: url(../img/product-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    padding: 90px;
+    border-radius: 20px;
+}
+
+.product-block-img {
+    position: absolute;
+    top: 60px;
+    left: -300px;
+}
+
+.product-block-text {
+    margin-left: 60%;
+}
+
+.heading {
+    font-size: 42px;
+    margin-top: 0;
+}
+
+.experience-sect {
+    position: relative;
+    background-image: url(../img/experience-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 210px 0 55px;
+    margin-top: 60px;
+}
+
+.experience-img {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+}
+
+.experience-text {
+    max-width: 360px;
 }
 
 @media(max-width: 1110px) {
@@ -143,6 +192,25 @@ body {
 
     .intro-form {
         margin-left: 20px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .product-block-img {
+        position: static;
+    }
+
+    .product-block {
+        padding: 30px;
+    }
+
+    .product-block-text {
+        margin: 30px 0 0;
+    }
+
+    .product-block-img {
+        margin-left: -30px;
+        max-width: 100%;
     }
 }
 
