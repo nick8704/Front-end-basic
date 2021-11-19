@@ -287,6 +287,19 @@ body {
     max-width: 360px;
 }
 
+@media (max-width: 1440px) {
+    .best-space-img {
+        height: 350px;
+    }
+
+    .space-img-second{
+        margin: 0 20px 0 0;
+    }
+
+    .best-space-card {
+        display: none;
+    }
+}
 
 @media (max-width: 1110px) {
     .navbar-list {
@@ -311,7 +324,7 @@ body {
         text-align: left;
     }
 
-    .text {
+    .col .text {
         margin-left: 20px;
     }
 
@@ -322,9 +335,60 @@ body {
     .intro-form {
         margin-left: 20px;
     }
+
+    .best-space-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best-space-content {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 184px;
+    }
+
+    .best-space-heading {
+        font-size: 34px;
+        line-height: 1.5;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .text {
+        margin-right: 15px;
+    }
+
+    .best-space-text p {
+        margin-left: 0;
+    }
+
+    .best-space-media {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .best-space-img {
+        height: 550px;
+    }
+
+    .space-img-second{
+        margin: 0;
+    }
+
+    .best-space-btn {
+        margin-top: 15px;
+    }
+
+    .product-sect {
+        margin: 50px auto;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .product-block-img {
         position: static;
     }
@@ -360,10 +424,35 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        margin: 15px auto;
     }
 
     .navbar-nav {
         margin: 10px;
+    }
+
+    .best-space-sect {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .best-space-container {
+        padding: 10px;
+    }
+
+    .best-space-media {
+        flex-direction: column;
+    }
+
+    .best-space-img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .space-img-first {
+        margin-top: 10px;
     }
 }
 
@@ -383,10 +472,20 @@ body {
         box-shadow: none;
     }
 
-    .btn {
+    .intro-form .btn {
         position: absolute;
         left: 0;
         top: 70px;
+    }
+
+    .product-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-buttons a {
+        width: 172px;
+        margin-top: 10px;
     }
 }
 
