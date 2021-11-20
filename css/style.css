@@ -164,14 +164,10 @@ body {
     padding: 32px 29px 32px 94px;
 }
 
-.best-space-card:before {
-    content: "";
+.best-space-logo {
     position: absolute;
-    width: 45px;
-    height: 45px;
-    background-image: url(../img/best-space-icon.svg);
-    top: 48px;
-    left: 29px;
+    margin-left: -65px;
+    margin-top: 15px;
 }
 
 .best-space-card-title {
@@ -285,20 +281,6 @@ body {
 
 .experience-text {
     max-width: 360px;
-}
-
-@media (max-width: 1440px) {
-    .best-space-img {
-        height: 350px;
-    }
-
-    .space-img-second {
-        margin: 0 20px 0 0;
-    }
-
-    .best-space-card {
-        display: none;
-    }
 }
 
 @media (max-width: 1110px) {
@@ -452,6 +434,11 @@ body {
     }
 
     .space-img-first {
+        margin-top: 10px;
+    }
+
+    .best-space-card {
+        position: static;
         margin-top: 10px;
     }
 }
