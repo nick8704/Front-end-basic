@@ -19,6 +19,10 @@ body {
     margin: 35px auto;
 }
 
+.navbar-nav {
+    z-index: 1;
+}
+
 .navbar-list {
     display: flex;
     gap: 42px;
@@ -29,9 +33,18 @@ body {
     color: #323232;
 }
 
+.navbar-link, .btn {
+    transition: .2s;
+}
+
 .navbar-list .active {
     font-weight: 700;
     color: #F78434;
+}
+
+.navbar-link:hover {
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .row {
@@ -48,11 +61,16 @@ body {
     margin-top: 127px;
     width: 640px;
     position: relative;
+    z-index: 1;
 }
 
 .text {
     line-height: 1.5;
     letter-spacing: .05em;
+}
+
+.intro-img {
+    animation: img-scale 2s 2 linear 1s;
 }
 
 .intro-form {
@@ -75,6 +93,10 @@ body {
     cursor: pointer;
     border: 0;
     text-decoration: none;
+}
+
+.btn-orange:hover {
+    background-color: #ff510c;
 }
 
 .intro-form .btn {
@@ -290,6 +312,10 @@ body {
     background-color: #fff;
 }
 
+.btn-white:hover {
+    background-color: #e8e1e1;
+}
+
 @media (max-width: 1110px) {
     .navbar-list {
         margin-right: 10px;
@@ -338,7 +364,7 @@ body {
         margin-left: 184px;
     }
 
-    .best-space-heading {
+    .best-space-heading, .product-heading, .experience-sect .heading {
         font-size: 34px;
         line-height: 1.5;
         text-align: left;
@@ -440,6 +466,10 @@ body {
     .best-space-sect {
         margin-top: 200px;
     }
+
+    .experience-text .heading {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -507,5 +537,17 @@ body {
 
     .intro-form-text {
         padding-left: 0;
+    }
+}
+
+@keyframes img-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    0% {
+        transform: scale(1);
     }
 }
