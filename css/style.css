@@ -226,7 +226,7 @@ body {
 }
 
 .product-sect {
-    margin: 145px auto;
+    margin: 145px auto 0;
 }
 
 .product-block {
@@ -287,6 +287,72 @@ body {
     background-repeat: no-repeat;
     top: 21px;
     left: 30px;
+}
+
+.serve-sect {
+    text-align: center;
+    background-color: #F5F6FA;
+    margin-top: -233px;
+}
+
+.serve-heading {
+    padding-top: 377px;
+    margin-bottom: 0;
+}
+
+.serve-text {
+    margin-top: 10px;
+    padding-bottom: 228px;
+}
+
+.serve-cards {
+    display: flex;
+    justify-content: center;
+    margin: -183px 10px 112px;
+}
+
+.serve-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 540px;
+    width: 100%;
+    min-height: 365px;
+    border-radius: 25px;
+    margin: 0 15px;
+}
+
+.serve-card-icon {
+    margin-top: 40px;
+}
+
+.serve-card-buyers {
+    background-color: #F78434;
+}
+
+.heading-buyers, .text-buyers {
+    color: white;
+}
+
+.heading-buyers, .heading-seller {
+    margin: 15px auto 0;
+}
+
+.text-buyers, .text-seller {
+    margin: 0 90px 25px;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+}
+
+.serve-card-seller, .serve-btn {
+    background-color: #FFF;
+}
+
+.serve-btn {
+    color: #F78434;
+    margin-bottom: 39px;
 }
 
 .experience-sect {
@@ -377,7 +443,7 @@ body {
         max-width: 100%;
     }
 
-    .intro-form {
+    .intro-form, .serve-heading, .serve-text {
         margin-left: 20px;
     }
 
@@ -394,7 +460,7 @@ body {
         margin-left: 184px;
     }
 
-    .best-space-heading, .product-heading, .experience-sect .heading {
+    .best-space-heading, .product-heading, .experience-sect .heading, .serve-heading {
         font-size: 34px;
         line-height: 1.5;
         text-align: left;
@@ -403,6 +469,14 @@ body {
 
     .text {
         margin-right: 15px;
+    }
+
+    .serve-heading {
+        padding-top: 280px;
+    }
+
+    .serve-text {
+        text-align: left;
     }
 
     .best-space-text p {
@@ -429,7 +503,7 @@ body {
     }
 
     .product-sect {
-        margin: 50px auto;
+        margin: 50px auto 0;
     }
 }
 
@@ -499,6 +573,19 @@ body {
 
     .experience-text .heading {
         margin-bottom: 16px;
+    }
+
+    .serve-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serve-text {
+        padding-bottom: 200px;
+    }
+
+    .serve-card-buyers {
+        margin-bottom: 20px;
     }
 }
 
