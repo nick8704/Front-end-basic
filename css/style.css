@@ -320,6 +320,32 @@ body {
     background-color: #e8e1e1;
 }
 
+.footer-main {
+    padding: 85px 0;
+}
+
+.social-links-item {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 23px;
+}
+
+.social-links-fb {
+    color: #4267B2;
+}
+
+.social-links-twitter {
+    color: #1DA1F2;
+}
+
+.social-links-youtube {
+    color: #FF0000;
+}
+
+.social-links-linkedin {
+    color: #006699;
+}
+
 @media (max-width: 1110px) {
     .navbar-list {
         margin-right: 10px;
