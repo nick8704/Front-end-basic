@@ -132,6 +132,14 @@ body {
     margin-top: 100px;
 }
 
+.company-logo a {
+    transition-delay: .1s;
+}
+
+.company-logo a:hover {
+    transform: scale(1.2);
+}
+
 .logo-second {
     max-height: 34px;
 }
@@ -308,7 +316,7 @@ body {
 .serve-cards {
     display: flex;
     justify-content: center;
-    margin: -183px 10px 112px;
+    margin: -183px 10px 0;
 }
 
 .serve-card {
@@ -355,6 +363,41 @@ body {
     margin-bottom: 39px;
 }
 
+.choose-sect {
+    margin: 112px auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.choose-heading {
+    margin-bottom: 30px;
+}
+
+.choose-item {
+    max-width: 261px;
+    margin-top: 28px;
+}
+
+.choose-item-heading {
+    font-size: 28px;
+}
+
+.choose-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choose-item-heading {
+    margin-bottom: 0;
+}
+
+.choose-text {
+    margin-top: 0;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+}
+
 .experience-sect {
     position: relative;
     background-image: url(../img/experience-bg.svg);
@@ -363,6 +406,7 @@ body {
     background-size: cover;
     padding: 210px 0 55px;
     margin-top: 60px;
+    overflow: hidden;
 }
 
 .experience-img {
@@ -430,13 +474,15 @@ body {
     .main-heading {
         font-size: 34px;
         line-height: 1.5;
-        margin: 0 20px;
+        margin: 0 auto;
         width: 90%;
-        text-align: left;
+        max-width: 750px;
+        text-align: center;
     }
 
     .col .text {
         margin-left: 20px;
+        text-align: center;
     }
 
     .intro-img {
@@ -460,11 +506,13 @@ body {
         margin-left: 184px;
     }
 
-    .best-space-heading, .product-heading, .experience-sect .heading, .serve-heading {
+    .best-space-heading, .product-heading, .experience-sect .heading, .serve-heading, .choose-heading {
         font-size: 34px;
         line-height: 1.5;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .text {
@@ -475,8 +523,8 @@ body {
         padding-top: 280px;
     }
 
-    .serve-text {
-        text-align: left;
+    .text {
+        text-align: center;
     }
 
     .best-space-text p {
@@ -505,6 +553,10 @@ body {
     .product-sect {
         margin: 50px auto 0;
     }
+
+    .choose-sect {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -518,6 +570,10 @@ body {
 
     .product-block-text {
         margin: 30px 0 0;
+    }
+
+    .product-text {
+        max-width: 100%;
     }
 
     .product-block-img {
@@ -540,6 +596,17 @@ body {
     .experience-sect .container {
         display: flex;
         flex-direction: column;
+    }
+
+    .experience-text {
+        max-width: 100%;
+    }
+
+    .experience-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 165px;
     }
 }
 
