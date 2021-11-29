@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -42,7 +46,7 @@ body {
     color: #F78434;
 }
 
-.navbar-link:hover {
+.navbar-link:hover, .footer-link:hover {
     font-weight: 700;
     text-decoration: underline;
 }
@@ -438,6 +442,11 @@ body {
     margin-left: 0;
 }
 
+.review-video {
+    width: 100%;
+    height: 204px;
+}
+
 .reviewer-text {
     line-height: 27px;
     letter-spacing: 1.15px;
@@ -464,16 +473,6 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-.review-item1:before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/play-icon.svg");
-    top: 135px;
-    right: 20px;
 }
 
 .review-item3:after {
@@ -529,6 +528,7 @@ body {
 
 .footer-main {
     padding: 85px 0;
+    overflow: hidden;
 }
 
 .social-links-item {
@@ -551,6 +551,50 @@ body {
 
 .social-links-linkedin {
     color: #006699;
+}
+
+.footer-main {
+    padding-bottom: 80px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    max-width: 306px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.footer-text {
+    letter-spacing: 1.15px;
+    margin-bottom: 40px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    max-width: 587px;
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-bottom: 18px;
+}
+
+.footer-list-item {
+    margin-bottom: 13px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #323232;
 }
 
 @media (max-width: 1110px) {
@@ -603,7 +647,7 @@ body {
         margin-left: 184px;
     }
 
-    .best-space-heading, .product-heading, .experience-sect .heading, .serve-heading, .choose-heading {
+    .best-space-heading, .product-heading, .experience-sect .heading, .serve-heading, .choose-heading, .heading-buyers, .heading-seller {
         font-size: 34px;
         line-height: 1.5;
         text-align: center;
@@ -671,6 +715,22 @@ body {
 
     .choose-sect {
         margin-top: 40px;
+    }
+
+    .footer-main {
+        padding-bottom: 40px;
+    }
+
+    .footer-left {
+        margin-left: 20px;
+    }
+
+    .footer-right {
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        text-align: left;
     }
 }
 
@@ -768,6 +828,32 @@ body {
 
     .serve-card-buyers {
         margin-bottom: 20px;
+    }
+
+    .footer-main {
+        padding-top: 40px;
+        overflow: hidden;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text {
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .footer-title {
+        margin-top: 40px;
     }
 }
 
@@ -873,11 +959,13 @@ body {
     .review-item3 {
         overflow: hidden;
     }
-}
 
-@media (max-width: 360px) {
-    .review-item1:before {
-        display: none;
+    .footer-right {
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 14px;
     }
 }
 
@@ -888,6 +976,10 @@ body {
 
     .intro-form-text {
         padding-left: 0;
+    }
+
+    .company-logo img {
+        max-width: 100%;
     }
 }
 
