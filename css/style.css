@@ -962,6 +962,7 @@ img {
 
     .footer-right {
         flex-direction: column;
+        text-align: center;
     }
 
     .btn {
