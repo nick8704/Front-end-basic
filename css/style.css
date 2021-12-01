@@ -47,9 +47,14 @@ img {
 }
 
 .navbar-link:hover, .footer-link:hover {
-    font-weight: 700;
+    text-shadow: 0 .3px #323232, .3px 0 #323232, .3px .3px #323232;
     text-decoration: underline;
 }
+
+.active:hover {
+     text-shadow: 0 .3px #F78434, .3px 0 #F78434, .3px .3px #F78434;
+     text-decoration: underline;
+ }
 
 .row {
     display: flex;
